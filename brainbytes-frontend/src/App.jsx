@@ -1,7 +1,6 @@
 import { useState, useEffect, useCallback } from "react";
 
-const API = "http://localhost:5000/api";
-
+const API = "https://your-backend-name.onrender.com/api";
 // ─── helpers ────────────────────────────────────────────────────────────────
 function useAuth() {
   const [token, setToken] = useState(() => localStorage.getItem("bb_token"));
