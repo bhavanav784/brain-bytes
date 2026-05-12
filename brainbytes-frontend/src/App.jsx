@@ -1,6 +1,7 @@
 import { useState, useEffect, useCallback } from "react";
 
-const API = "https://your-backend-name.onrender.com/api";
+const API = import.meta.env.VITE_API_URL;
+
 // ─── helpers ────────────────────────────────────────────────────────────────
 function useAuth() {
   const [token, setToken] = useState(() => localStorage.getItem("bb_token"));
